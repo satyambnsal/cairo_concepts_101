@@ -29,5 +29,13 @@ scarb cairo-test
 Cairo is a programming language designed for a virtual CPU of the same name. 
 
 
+# Debug help
+If you get an error `Error: program requires gas counter, please provide `--available-gas` argument`, run program with
+```
+scarb build && scarb cairo-run --available-gas=1000000
+```
+Mostly, You will get this error if you are using loops.
+
 # Open Questions & Task
-- [] Explore cairo cpu architecture
+- [ ] Explore cairo cpu architecture
+- [ ] How to print results in decimal using `print()` method
