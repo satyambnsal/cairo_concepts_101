@@ -20,6 +20,12 @@ Run Tests
 ```
 scarb cairo-test
 ```
+Single command to build and execute
+```
+scarb build && scarb cairo-run --available-gas=20
+00000
+```
+
 
 
 # Concepts
